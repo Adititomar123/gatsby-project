@@ -7,6 +7,13 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env`,
+});
+
+console.log(`Contentful Space ID: ${process.env.SPACEID}`);
+
 module.exports = {
   plugins: [
     `gatsby-transformer-remark`,// dont need a object here just basic one
@@ -17,6 +24,15 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       }
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.SPACEID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    `gatsby-plugin-image`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
      {
