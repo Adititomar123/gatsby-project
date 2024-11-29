@@ -1,0 +1,24 @@
+.wrapper {
+    padding: 0 20px;
+}
+.image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+picture {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .image {
+        aspect-ratio: 2.197 / 1;
+    }
+
+    .image {
+        padding: 0 40px;
+    }
+}
