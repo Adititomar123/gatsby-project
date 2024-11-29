@@ -4,13 +4,15 @@
     width: 100%;
     object-fit: cover;
     height: auto;
-    padding: 0 20px;
+   
     padding-bottom: 20px;
+    aspect-ratio: 1;
 }
 picture {
     display: block;
     width: 100%;
     object-fit: cover;
+    /* padding: 0 20px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -19,8 +21,11 @@ picture {
     }
 
     .image {
-        padding: 0 40px;
+       
         padding-bottom: 20px;
     }
+    /* picture {
+        padding: 0 40px;
+    } */
 }
 
