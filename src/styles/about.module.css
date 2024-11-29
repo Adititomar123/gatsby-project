@@ -1,11 +1,11 @@
-.wrapper {
-    padding: 0 20px;
-}
+
 .image {
     display: block;
     width: 100%;
     object-fit: cover;
     height: auto;
+    padding: 0 20px;
+    padding-bottom: 20px;
 }
 picture {
     display: block;
@@ -20,5 +20,7 @@ picture {
 
     .image {
         padding: 0 40px;
+        padding-bottom: 20px;
     }
 }
+
