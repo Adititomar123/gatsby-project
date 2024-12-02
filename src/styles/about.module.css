@@ -1,10 +1,10 @@
 
 .image {
     display: block;
-    width: 100%;
+    width: calc(100% - 40px);
     object-fit: cover;
     height: auto;
-   
+   margin: 0 auto;
     padding-bottom: 20px;
     aspect-ratio: 1;
 }
@@ -12,20 +12,24 @@ picture {
     display: block;
     width: 100%;
     object-fit: cover;
-    /* padding: 0 20px; */
+   
 }
 
 @media only screen and (min-width: 768px) {
     .image {
         aspect-ratio: 2.197 / 1;
+        width: calc(100% - 80px);
     }
 
     .image {
        
         padding-bottom: 20px;
     }
-    /* picture {
-        padding: 0 40px;
-    } */
+   
 }
-
+@media only screen and (min-width: 1024px) {
+    .image {
+        
+        width: 85vw;
+    }
+}
