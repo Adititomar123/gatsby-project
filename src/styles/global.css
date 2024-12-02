@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: "Montserrat";
   color: white;
+  box-sizing: border-box;
 }
 html, body {
   min-height: 100%;
@@ -21,7 +22,7 @@ p {
 
 /* layout & nav */
 .layout {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 nav {
