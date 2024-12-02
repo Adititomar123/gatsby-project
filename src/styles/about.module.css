@@ -1,7 +1,7 @@
 
 .image {
     display: block;
-    width: calc(100% - 40px);
+    width: 100%;
     object-fit: cover;
     height: auto;
    margin: 0 auto;
@@ -18,7 +18,7 @@ picture {
 @media only screen and (min-width: 768px) {
     .image {
         aspect-ratio: 2.197 / 1;
-        width: calc(100% - 80px);
+       
     }
 
     .image {
@@ -27,9 +27,4 @@ picture {
     }
    
 }
-@media only screen and (min-width: 1024px) {
-    .image {
-        
-        width: 85vw;
-    }
-}
+
